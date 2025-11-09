@@ -159,19 +159,113 @@ pip install tensorflow keras numpy pandas matplotlib seaborn pillow scikit-learn
 
 ---
 
-## 🎯 Next Steps (Week 2)
+---
 
-### Planned Activities:
-1. Build CNN model architecture using transfer learning
-2. Implement data augmentation pipeline
-3. Train model with class weighting
-4. Evaluate model performance
-5. Generate confusion matrix and classification report
-6. Optimize hyperparameters
+## ✅ Week 2: Model Training & Evaluation (Complete)
 
-### Target Metrics:
-- **Expected Accuracy:** 85-92%
-- **Training Time:** 20-40 minutes (with GPU)
-- **Model Size:** ~12 MB
+### Accomplishments:
+- ✅ Built CNN architecture using Transfer Learning (MobileNetV2)
+- ✅ Implemented heavy data augmentation pipeline
+- ✅ Applied class weighting to handle 8.77x imbalance
+- ✅ Trained model for 50 epochs with callbacks
+- ✅ Achieved **[YOUR ACCURACY]%** test accuracy
+- ✅ Generated comprehensive evaluation metrics
+
+### Model Architecture:
+- **Base Model:** MobileNetV2 (pre-trained on ImageNet)
+- **Input Size:** 224×224×3
+- **Total Parameters:** 3,051,340 (Trainable: 791,820)
+- **Optimizer:** Adam (lr: 0.0001)
+- **Loss:** Categorical Crossentropy
+
+### Model Performance:
+- **Test Accuracy:** [YOUR ACCURACY]%
+- **Test Loss:** [YOUR LOSS]
+- **Training Time:** ~30-40 minutes (T4 GPU)
+- **Model Size:** 11.64 MB
+
+### Deliverables:
+- 🤖 best_waste_classifier.h5 (trained model)
+- 📊 training_history.png (training graphs)
+- 📊 confusion_matrix.png (performance matrix)
+- 📄 classification_report.txt (detailed metrics)
+
+### Training Configuration:
+- **Dataset Split:** 70% train, 15% val, 15% test
+- **Batch Size:** 32
+- **Data Augmentation:** Rotation, flip, zoom, brightness
+- **Class Weights:** Applied to handle imbalance
+- **Callbacks:** Early stopping, model checkpoint, LR reduction
+
+---
+
+## 🚀 Next Steps (Week 3)
+- [ ] Deploy model as REST API
+- [ ] Create web interface
+- [ ] Test with real-world images
+```
+
+5. **Replace `[YOUR ACCURACY]` and `[YOUR LOSS]`** with your actual values from `classification_report.txt`
+
+6. **Scroll down** and type commit message:
+```
+   Updated README with Week 2 progress
+```
+
+7. **Click "Commit changes"**
+
+---
+
+### **STEP 3: Find Your Test Accuracy**
+
+You need to look at your `classification_report.txt` file to get the exact numbers:
+
+**On your computer:**
+1. Open `classification_report.txt` 
+2. Look for a line that says:
+```
+   accuracy                           0.87    2328
+```
+   The number (0.87) = 87% accuracy
+3. Also look for test loss (might be in training output)
+
+**Or share the file with me** and I'll tell you the exact numbers!
+
+---
+
+### **STEP 4: Submit on LMS**
+
+1. Go to **https://skills4future.in/login**
+2. Click **"Week 2"** tab
+3. **Paste this link:**
+```
+   https://github.com/NEETA-TP/Week-1
+```
+4. **In comments, write:**
+```
+Week 2 Submission: CNN Model Training Completed
+
+Repository: https://github.com/NEETA-TP/Week-1
+Status: Week 2 Complete ✅
+
+Accomplishments:
+✅ Trained CNN model using MobileNetV2 (Transfer Learning)
+✅ Achieved [YOUR ACCURACY]% test accuracy
+✅ Handled 8.77x class imbalance with weighting
+✅ Implemented comprehensive data augmentation
+✅ Model size: 11.64 MB (production-ready)
+✅ Training time: ~30-40 minutes on T4 GPU
+
+Files Added:
+- best_waste_classifier.h5 (trained model)
+- training_history.png (accuracy/loss graphs)
+- confusion_matrix.png (performance visualization)
+- classification_report.txt (detailed metrics)
+- Updated README.md with Week 2 section
+
+Dataset: 15,515 images across 12 waste classes
+Split: 70% train (10,860), 15% val (2,327), 15% test (2,328)
+
+Ready for Week 3: Model Deployment
 
 
