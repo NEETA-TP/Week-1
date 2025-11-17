@@ -1,27 +1,21 @@
-WASTE CLASSIFICATION - MODEL EVALUATION
-============================================================
+FIXED MODEL - Test Accuracy: 93.43%
+Test Loss: 0.3608
 
-Test Accuracy: 11.21%
-Test Loss: 2.7517
-
-============================================================
-CLASSIFICATION REPORT
-============================================================
               precision    recall  f1-score   support
 
-     battery      0.207     0.282     0.239       142
-  biological      0.500     0.095     0.159       148
- brown-glass      0.000     0.000     0.000        91
-   cardboard      0.183     0.112     0.139       134
-     clothes      0.000     0.000     0.000       799
- green-glass      0.065     0.043     0.051        94
-       metal      0.017     0.017     0.017       115
-       paper      0.236     0.367     0.287       158
-     plastic      0.077     0.062     0.068       130
-       shoes      0.240     0.020     0.037       297
-       trash      0.065     0.587     0.118       104
- white-glass      0.100     0.457     0.164       116
+     battery      0.970     0.901     0.934       142
+  biological      0.894     0.966     0.929       148
+ brown-glass      0.953     0.901     0.927        91
+   cardboard      0.913     0.866     0.889       134
+     clothes      0.991     0.992     0.992       799
+ green-glass      0.879     1.000     0.935        94
+       metal      0.771     0.939     0.847       115
+       paper      0.822     0.962     0.886       158
+     plastic      0.901     0.700     0.788       130
+       shoes      0.954     0.970     0.962       297
+       trash      0.967     0.856     0.908       104
+ white-glass      0.948     0.784     0.858       116
 
-    accuracy                          0.112      2328
-   macro avg      0.141     0.170     0.107      2328
-weighted avg      0.117     0.112     0.077      2328
+    accuracy                          0.934      2328
+   macro avg      0.914     0.903     0.905      2328
+weighted avg      0.938     0.934     0.934      2328
